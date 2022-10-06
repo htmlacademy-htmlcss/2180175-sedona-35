@@ -1,0 +1,133 @@
+@font-face {
+font-family: "PT Sans";
+font-style: normal;
+font-weight: 400;
+src: url("../fonts/ptsans-400.woff2") format("woff2");
+font-display: swap;
+}
+
+@font-face {
+font-family: "PT Sans";
+font-style: normal;
+font-weight: 700;
+src: url("../fonts/ptsans-700.woff2") format("woff2");
+font-display: swap;
+}
+
+body{
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: white;
+}
+
+li{
+  list-style-type: none;
+}
+
+.page-header{
+  background-color: white;
+  color: #333333;
+}
+
+.navigation-link{
+  font-family: "PT Sans", sans-serif;
+  line-height: 24px;
+  font-size: 20px;
+  color: #000000;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+}
+
+.page-main{
+  background-color: white;
+  color: #000000;
+}
+
+.title-text{
+  text-align: center;
+}
+
+.title-under-text{
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.advantages{
+  text-align: center;
+
+}
+
+.advantages-title{
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-description{
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.services{
+  text-align: center;
+}
+
+.services-title{
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.services-text{
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.search{
+  text-align: center;
+}
+
+.search-title{
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.search-text{
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.subscribe{
+  text-align: center;
+}
+
+.subscribe-title{
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+
+}
+
+.subscribe-text{
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.page-footer{
+  text-align: center;
+}
