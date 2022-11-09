@@ -137,7 +137,10 @@
             </li>
             <li class="advantages-item full under">
               <div class="block">
-                <h3 class="advantages-item-title-nav">Там есть мост дьявола</h3>
+                <h3 class="advantages-item-title-nav">
+                  Там есть<br />
+                  мост дьявола
+                </h3>
                 <hr />
                 <p class="advantages-item-description">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
@@ -162,7 +165,9 @@
                 />
                 <h3 class="services-title">Жильё</h3>
                 <p class="services-text">
-                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                  Рекомендуем пожить<br />
+                  в настоящем мотеле,<br />
+                  всё как в кино!
                 </p>
               </div>
             </li>
@@ -178,8 +183,9 @@
                 />
                 <h3 class="services-title">Еда</h3>
                 <p class="services-text">
-                  Всегда заказывайте топовый фирменный бургер, вы не
-                  разочаруетесь!
+                  Всегда заказывайте<br />
+                  топовый фирменный бургер,<br />
+                  вы не разочаруетесь!
                 </p>
               </div>
             </li>
@@ -195,7 +201,8 @@
                 />
                 <h3 class="services-title">Сувениры</h3>
                 <p class="services-text">
-                  Не только китайского, но и настоящего местного производства!
+                  Не только китайского,<br />
+                  но и настоящего местного производства!
                 </p>
               </div>
             </li>
@@ -203,17 +210,19 @@
         </section>
 
         <section class="search" data-test="search">
-          <div class="search-block">
-            <h2 class="search-title">Заинтересовались?</h2>
-            <div class="search-text-block-under">
-              <p class="search-text">
-                Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-                предложения гостиниц в Седоне
-              </p>
+          <div class="search-margin">
+            <div class="search-block">
+              <h2 class="search-title">Заинтересовались?</h2>
+              <div class="search-text-block-under">
+                <p class="search-text">
+                  Укажите предполагаемые даты поездки,<br />
+                  и мы покажем вам лучшие предложения гостиниц в Седоне
+                </p>
+              </div>
+              <button class="search-button" type="button">
+                Поиск Гостиницы В Седоне
+              </button>
             </div>
-            <button class="search-button" type="button">
-              Поиск Гостиницы В Седоне
-            </button>
           </div>
         </section>
       </main>
@@ -327,7 +336,7 @@
       </footer>
     </div>
     <div class="form-wrapper">
-      <form action="" class="hotel-form">
+      <form action="https://echo.htmlacademy.ru/" class="hotel-form">
         <div class="top-panel">
           <p class="wrapper-text">Поиск гостиницы в Седоне</p>
           <button type="button" class="cross-button">
@@ -345,20 +354,27 @@
             </svg>
           </button>
         </div>
+
         <div class="middle-panel">
-          <p>Дата заезда:</p>
-          <input type="text" value="27 апреля 2020" class="input-date" />
-          <button class="calendar-position"></button>
-          <p class="middle-calendar">Мы не можем отправить вас в прошлое.</p>
-        </div>
-        <div class="second-middle-panel">
-          <p>Дата выезда:</p>
+          <p class="second-text">Дата Заезда:</p>
           <input
             type="text"
-            value="1 сентября 2021"
-            class="input-date-second"
+            value="27 апреля 2020"
+            class="input-date"
+            name="date-arrival"
           />
-          <button class="calendar-position"></button>
+          <button class="button-calendar" type="button"></button>
+          <p class="middle-calendar">Мы не можем отправить вас в прошлое.</p>
+        </div>
+        <div class="middle-panel second">
+          <p class="third-text">Дата Выезда:</p>
+          <input
+            type="text"
+            value="1 сентября 2023"
+            class="input-date-second"
+            name="date-departure"
+          />
+          <button class="button-calendar" type="button"></button>
           <p class="middle-calendar-color">
             На эти даты есть свободные номера. Пока есть.
           </p>
@@ -377,7 +393,7 @@
                 <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" />
               </svg>
             </button>
-            <input class="counter-input" type="text" value="2" />
+            <input class="counter-input" type="text" value="2" name="adults" />
             <button type="button" class="counter-button counter-plus">
               <svg
                 width="14"
@@ -412,11 +428,14 @@
                 />
               </svg>
             </button>
-            <span class="tooltip-text"
-              >Укажите количество детей, которые будут с вами, возраст которых
-              от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span
-            >
+            <div class="tooltip-text">
+              Укажите количество детей, которые будут с вами, возраст которых от
+              6 до 18 лет. Дети<br />
+              до 6 лет размещаются бесплатно.
+              <span class="square"></span>
+            </div>
           </span>
+
           <div class="counter-second">
             <button type="button" class="counter-button counter-minus">
               <svg
@@ -429,8 +448,8 @@
                 <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" />
               </svg>
             </button>
-            <span class="square"></span>
-            <input class="counter-input" type="text" value="2" />
+
+            <input class="counter-input" type="text" value="2" name="childs" />
             <button type="button" class="counter-button counter-plus">
               <svg
                 width="14"
@@ -444,7 +463,7 @@
             </button>
           </div>
         </div>
-        <button class="under-button" type="button">
+        <button class="under-button" type="submit">
           <span class="under-button-text">Найти</span>
         </button>
       </form>
