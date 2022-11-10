@@ -40,7 +40,7 @@ li {
   color: #333333;
   display: flex;
   padding-left: 70px;
-  padding-right: 70px;
+  padding-right: 50px;
   height: 64px;
 }
 
@@ -79,6 +79,8 @@ li {
   padding: 0;
   margin-left: 170px;
   display: flex;
+
+  flex-wrap: wrap;
 }
 
 .navigation-item {
@@ -113,6 +115,7 @@ li {
 }
 
 .navigation-button {
+  font-family: "PT Sans", sans-serif;
   background-color: #756157;
   width: 160px;
   height: 36px;
@@ -124,6 +127,7 @@ li {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .navigation-button:hover,
@@ -145,9 +149,6 @@ li {
   background-color: white;
   color: #000000;
   flex-grow: 1;
-}
-
-.title-text {
 }
 
 .title-under-text {
@@ -243,10 +244,12 @@ li {
 .advantages-item-under-image {
   background-image: url("../images/mountains.jpg");
   flex: 2;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .block {
-  padding: 100px 85px;
+  padding: 92px 85px 112px 85px;
   text-align: center;
 }
 
@@ -260,6 +263,8 @@ li {
   height: 2px;
   background-color: rgba(0, 0, 0, 0.3);
   border: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .advantages-item.full hr {
@@ -275,6 +280,7 @@ li {
 }
 
 .advantages-item-title {
+  margin: 0;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -283,20 +289,16 @@ li {
   text-align: center;
   margin-left: 28px;
   padding: 0;
-}
-
-.advantages-item-description {
-  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .advantages-item-title-nav {
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  width: 175px;
-  height: 56px;
-  margin-left: 25px;
 }
 
 .advantages-item.full.under {
@@ -306,6 +308,9 @@ li {
 
 .services-list {
   display: flex;
+  margin: 0;
+
+  padding: 0;
 }
 
 .services {
@@ -321,13 +326,11 @@ li {
   margin: 0 auto;
   align-items: center;
   flex-wrap: wrap;
-
-  padding: 80px 80px 80px 60px;
+  padding: 75px 85px;
 }
 
 .search {
   text-align: center;
-  height: 406px;
 }
 
 .search-block {
@@ -369,6 +372,7 @@ li {
   line-height: 36px;
   border-radius: 4px;
   border: 1px #756157;
+  cursor: pointer;
 }
 
 .search-button:hover,
@@ -398,6 +402,7 @@ li {
   height: 100%;
   color: white;
   padding: 96px 258px 104px 258px;
+  margin-top: 82px;
 }
 
 .subscribe-title {
@@ -406,6 +411,8 @@ li {
   line-height: 36px;
   text-transform: uppercase;
   font-weight: 700;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .subscribe-text {
@@ -441,6 +448,7 @@ li {
 }
 
 .subscribe-button {
+  font-family: "PT Sans", sans-serif;
   width: 232px;
   height: 52px;
   background-color: #82b3d3;
@@ -450,6 +458,8 @@ li {
   line-height: 36px;
   border: 1px #82b3d3;
   margin-left: 0;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .subscribe-button:hover,
@@ -600,9 +610,6 @@ li {
   padding: 0;
 }
 
-.hotel-part {
-}
-
 .hotel-main-text {
   font-weight: 700;
   font-size: 30px;
@@ -621,9 +628,6 @@ li {
   list-style-type: none;
   padding-left: 70px;
   height: 438px;
-}
-
-.product {
 }
 
 .hotel-1 {
@@ -769,6 +773,7 @@ li {
 }
 
 .hotel-form {
+  font-family: "PT Sans", sans-serif;
   width: 717px;
   height: 576px;
   margin-top: 396px;
@@ -799,6 +804,9 @@ li {
   height: 52px;
   border-radius: 50%;
   margin-right: -18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cross-button:hover {
@@ -816,10 +824,15 @@ li {
 }
 
 .middle-panel {
+  position: relative;
   display: flex;
   align-items: center;
-  margin-top: 64px;
+  margin-top: 50px;
   flex-wrap: wrap;
+}
+
+.middle-panel.second {
+  margin-top: 23px;
 }
 
 .input-date {
@@ -829,21 +842,28 @@ li {
   border: none;
   font-weight: 700;
   font-size: 18px;
-  padding-left: 20px;
-  margin-left: 24px;
+  padding-left: 25px;
+  margin-left: 15px;
 }
 
 p {
   margin: 0;
 }
 
-.calendar-position {
+.button-calendar {
+  position: absolute;
   margin-left: -35px;
   border: none;
   background-image: url("../images/calendar.svg");
-  width: 16px;
-  height: 15px;
+  width: 60px;
+  height: 48px;
   opacity: 0.3;
+  background-size: 16px 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 0;
+  top: 0;
+  cursor: pointer;
 }
 
 .middle-calendar {
@@ -853,13 +873,6 @@ p {
   color: #ff5757;
   margin-left: 157px;
   margin-top: 4px;
-}
-
-.second-middle-panel {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 23px;
-  align-items: center;
 }
 
 .middle-calendar-color {
@@ -877,8 +890,8 @@ p {
   border: none;
   font-weight: 700;
   font-size: 18px;
-  padding-left: 20px;
-  margin-left: 18px;
+  padding-left: 27px;
+  margin-left: 10px;
 }
 
 .text-counter {
@@ -889,6 +902,9 @@ p {
 
 .counter-margin {
   margin-right: 46px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .counter {
@@ -948,6 +964,7 @@ p {
 }
 
 .tooltip {
+  position: relative;
 }
 
 .tooltip-toggle {
@@ -972,14 +989,12 @@ p {
 }
 
 .square {
-  width: 19px;
-  height: 19px;
   position: absolute;
-  left: -85px;
-  border: 20px solid transparent;
-  border-bottom: 20px solid #333333;
-  top: 20px;
-  display: none;
+  left: 50%;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #333333;
+  top: -30px;
+  transform: translateX(-50%);
 }
 
 .tooltip-text {
@@ -995,9 +1010,9 @@ p {
   border-radius: 10px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   width: 256px;
-  height: 110px;
-  bottom: 2455px;
-  left: 1250px;
+  height: 143px;
+  top: 45px;
+  right: -65px;
   display: none;
 }
 
@@ -1006,8 +1021,8 @@ p {
   display: block;
 }
 
-.square:hover,
-.square:focus {
+.counter-second:hover + .square,
+.counter-second:focus + .square {
   display: block;
 }
 
@@ -1036,4 +1051,17 @@ p {
 
 .under-button-text {
   text-transform: uppercase;
+}
+
+.second-text {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.third-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
 }
