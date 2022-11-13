@@ -991,9 +991,9 @@ p {
 .square {
   position: absolute;
   left: 50%;
-  border: 12px solid transparent;
-  border-bottom: 12px solid #333333;
-  top: -24px;
+  border: 9px solid transparent;
+  border-bottom: 9px solid #333333;
+  top: -18px;
   transform: translateX(-50%);
 }
 
@@ -1006,13 +1006,13 @@ p {
   font-size: 16px;
   line-height: 20px;
   text-transform: none;
-  padding: 15px 18px;
+  padding: 22px 20px;
   border-radius: 10px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   width: 256px;
   height: 143px;
-  top: 45px;
-  right: -65px;
+  top: 40px;
+  right: -62px;
   display: none;
 }
 
@@ -1040,7 +1040,7 @@ p {
 
 .input-date:active,
 .input-date-second:active {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   outline: 2px solid #000000;
 }
 
