@@ -25,9 +25,8 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   color: #333333;
-  background-color: white;
   height: 100%;
-  min-width: 1200px;
+  background-color: #f2f2f2;
 }
 
 li {
@@ -217,6 +216,7 @@ li {
 .page-container {
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .advantages-item {
@@ -839,11 +839,11 @@ li {
   width: 446px;
   height: 48px;
   background-color: #f2f2f2;
-  border: none;
+  border: 0;
   font-weight: 700;
   font-size: 18px;
   padding-left: 25px;
-  margin-left: 15px;
+  margin-left: 18px;
 }
 
 p {
@@ -853,7 +853,7 @@ p {
 .button-calendar {
   position: absolute;
   margin-left: -35px;
-  border: none;
+  border: 0;
   background-image: url("../images/calendar.svg");
   width: 60px;
   height: 48px;
@@ -991,9 +991,9 @@ p {
 .square {
   position: absolute;
   left: 50%;
-  border: 15px solid transparent;
-  border-bottom: 15px solid #333333;
-  top: -30px;
+  border: 12px solid transparent;
+  border-bottom: 12px solid #333333;
+  top: -24px;
   transform: translateX(-50%);
 }
 
@@ -1026,6 +1026,24 @@ p {
   display: block;
 }
 
+.input-date:hover,
+.input-date-second:hover {
+  background-color: #e6e6e6;
+}
+
+.input-date:focus,
+.input-date-second:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.input-date:active,
+.input-date-second:active {
+  background-color: #F2F2F2;
+  outline: 2px solid #000000;
+}
+
 .under-button {
   width: 577px;
   height: 60px;
@@ -1037,6 +1055,7 @@ p {
   font-size: 20px;
   line-height: 24px;
   margin-top: 48px;
+  cursor: pointer;
 }
 
 .under-button:hover,
