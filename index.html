@@ -363,25 +363,29 @@
           </div>
 
           <div class="middle-panel">
-            <p class="second-text">Дата Заезда:</p>
+            <label for="arrival-date" class="second-text">Дата Заезда:</label>
             <input
               type="text"
               value="27 апреля 2020"
               class="input-date"
               name="date-arrival"
               placeholder="Укажите дату"
+              id="arrival-date"
             />
             <button class="button-calendar" type="button"></button>
             <p class="middle-calendar">Мы не можем отправить вас в прошлое.</p>
           </div>
           <div class="middle-panel second">
-            <p class="third-text">Дата Выезда:</p>
+            <label for="date-of-departure" class="third-text"
+              >Дата Выезда:</label
+            >
             <input
               type="text"
               value="1 сентября 2023"
               class="input-date-second"
               name="date-departure"
               placeholder="Укажите дату"
+              id="date-of-departure"
             />
             <button class="button-calendar" type="button"></button>
             <p class="middle-calendar-color">
@@ -389,7 +393,7 @@
             </p>
           </div>
           <div class="text-counter">
-            <p class="counter-margin">Взрослые:</p>
+            <label for="adults" class="counter-margin">Взрослые:</label>
             <div class="counter">
               <button type="button" class="counter-button counter-minus">
                 <svg
@@ -407,6 +411,7 @@
                 type="text"
                 value="2"
                 name="adults"
+                id="adults"
               />
               <button type="button" class="counter-button counter-plus">
                 <svg
@@ -421,7 +426,7 @@
               </button>
             </div>
             <div class="text-second">
-              <p class="kids">Дети:</p>
+              <label for="kids" class="kids">Дети:</label>
             </div>
             <span class="tooltip">
               <button class="tooltip-toggle" type="button">
@@ -468,6 +473,7 @@
                 type="text"
                 value="2"
                 name="childs"
+                id="kids"
               />
               <button type="button" class="counter-button counter-plus">
                 <svg
