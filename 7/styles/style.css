@@ -39,8 +39,7 @@ li {
   color: #333333;
   display: flex;
   padding-left: 70px;
-  padding-right: 50px;
-  height: 64px;
+  padding-right: 53px;
 }
 
 .logo-position {
@@ -71,6 +70,7 @@ li {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  height: 64px;
 }
 
 .navigation-list {
@@ -205,6 +205,8 @@ li {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .services-text {
@@ -221,6 +223,7 @@ li {
 
 .advantages-item {
   flex: 1;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-item.full {
@@ -249,7 +252,7 @@ li {
 }
 
 .block {
-  padding: 92px 85px 112px 85px;
+  padding: 95px 85px 112px 85px;
   text-align: center;
 }
 
@@ -320,6 +323,7 @@ li {
 
 .services-item {
   flex: 1;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .servic {
@@ -334,7 +338,7 @@ li {
 }
 
 .search-block {
-  padding-bottom: 20px;
+  padding-bottom: 17px;
   margin-top: 96px;
 }
 
@@ -401,8 +405,8 @@ li {
   width: 100%;
   height: 100%;
   color: white;
-  padding: 96px 258px 104px 258px;
-  margin-top: 82px;
+  padding: 92px 258px 104px 258px;
+  margin-top: 79px;
 }
 
 .subscribe-title {
@@ -412,7 +416,7 @@ li {
   text-transform: uppercase;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .subscribe-text {
@@ -770,6 +774,7 @@ li {
   top: 0;
   left: 0;
   font-weight: 700;
+  display: none;
 }
 
 .hotel-form {
@@ -844,6 +849,7 @@ li {
   font-size: 18px;
   padding-left: 25px;
   margin-left: 18px;
+  border-radius: 4px;
 }
 
 p {
@@ -892,6 +898,7 @@ p {
   font-size: 18px;
   padding-left: 27px;
   margin-left: 10px;
+  border-radius: 4px;
 }
 
 .text-counter {
@@ -1080,6 +1087,12 @@ p {
 }
 
 .third-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.kids {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
