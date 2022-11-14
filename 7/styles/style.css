@@ -244,14 +244,12 @@ li {
 }
 
 .advantages-item-image {
-  background-image: url("../images/city.jpg");
   flex: 2;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .advantages-item-under-image {
-  background-image: url("../images/mountains.jpg");
   flex: 2;
   background-repeat: no-repeat;
   background-size: cover;
@@ -330,7 +328,10 @@ li {
 
 .services-item {
   flex: 1;
-  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.services-item:nth-child(2n + 1) {
+  background: rgba(131, 179, 211, 0.12);
 }
 
 .servic {
@@ -781,6 +782,7 @@ li {
   top: 0;
   left: 0;
   font-weight: 700;
+  display: none;
 }
 
 .hotel-form {
@@ -903,8 +905,8 @@ p {
   border: none;
   font-weight: 700;
   font-size: 18px;
-  padding-left: 19px;
-  margin-left: 18px;
+  padding-left: 26px;
+  margin-left: 11px;
   border-radius: 4px;
 }
 
