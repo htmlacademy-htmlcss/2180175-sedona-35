@@ -239,6 +239,10 @@ body {
   color: white;
 }
 
+.advantages-item-description {
+  margin: 0;
+}
+
 .presentation-image {
   height: 485px;
   background-image: url("../images/background.jpg");
@@ -259,7 +263,7 @@ body {
 .advantages-item.full .block {
   background-color: #82b3d3;
   width: 400px;
-  padding: 89px 85px 114px 85px;
+  padding: 92px 85px 114px 82px;
 }
 
 .advantages-item hr {
@@ -344,7 +348,7 @@ body {
 
 .search-block {
   padding-bottom: 17px;
-  margin-top: 96px;
+  margin-top: 79px;
 }
 
 .search-title {
@@ -352,15 +356,15 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-bottom: 18px;
 }
 
 .search-text {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
-
   margin: 0 auto;
-  margin-bottom: 54px;
+  margin-bottom: 56px;
 }
 
 .search-text-block-under {
@@ -410,7 +414,7 @@ body {
   width: 100%;
   height: 100%;
   color: white;
-  padding: 92px 258px 104px 258px;
+  padding: 93px 258px 104px 258px;
   margin-top: 79px;
 }
 
