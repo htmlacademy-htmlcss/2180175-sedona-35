@@ -127,6 +127,7 @@ li {
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
+  padding: 8px 34px;
 }
 
 .navigation-button:hover,
@@ -244,15 +245,8 @@ li {
 }
 
 .advantages-item-image {
+  display: block;
   flex: 2;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.advantages-item-under-image {
-  flex: 2;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .block {
