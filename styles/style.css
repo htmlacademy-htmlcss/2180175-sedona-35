@@ -15,8 +15,8 @@
 }
 
 *,
-::after,
-::before {
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -598,6 +598,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
+  margin-top: 3px;
 }
 
 .top-panel {
@@ -615,6 +616,7 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  padding-top: 5px;
 }
 
 .cross-button:hover {
@@ -640,7 +642,7 @@ body {
 }
 
 .middle-panel.second {
-  margin-top: 23px;
+  margin-top: 6px;
 }
 
 .input-date {
@@ -650,8 +652,8 @@ body {
   border: 0;
   font-weight: 700;
   font-size: 18px;
-  padding-left: 25px;
-  margin-left: 17px;
+  padding-left: 20px;
+  margin-left: 21px;
   border-radius: 4px;
 }
 
@@ -695,14 +697,14 @@ body {
   border: none;
   font-weight: 700;
   font-size: 18px;
-  padding-left: 26px;
-  margin-left: 11px;
+  padding-left: 20px;
+  margin-left: 16px;
   border-radius: 4px;
 }
 
 .text-counter {
   display: flex;
-  margin-top: 23px;
+  margin-top: 8px;
   align-items: center;
 }
 

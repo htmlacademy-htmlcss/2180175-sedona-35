@@ -40,14 +40,14 @@
           </ul>
 
           <ul class="navigation-list right">
-            <a class="navigation-link" href="#">
               <li class="navigation-item">
+                <a class="navigation-link" href="#"></a>
                 <svg
                   width="20"
                   height="20"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  role="search"
+                  role="img"
                 >
                   <path
                     d="m19.5 18.008-3.7-3.68c1-1.292 1.7-2.983 1.7-4.872 0-4.376-3.6-7.956-8-7.956s-8 3.68-8 8.055c0 4.376 3.6 7.956 8 7.956 1.8 0 3.5-.597 4.9-1.69l3.7 3.679 1.4-1.492Zm-10-2.486c-3.3 0-6-2.685-6-5.967 0-3.282 2.7-5.967 6-5.967s6 2.685 6 5.967c0 3.282-2.7 5.967-6 5.967Z"
@@ -57,8 +57,8 @@
                 <span class="visually-hidden"> Поиск </span>
               </li>
             </a>
-            <a class="navigation-link" href="#">
               <li class="navigation-item">
+                <a class="navigation-link" href="#"></a>
                 <span class="likes-calc">
                   <svg
                     width="18"
@@ -364,6 +364,7 @@
             <div class="top-panel">
               <p class="wrapper-text">Поиск гостиницы в Седоне</p>
               <button type="button" class="cross-button">
+                <span class="visually-hidden">Закрыть окно.</span>
                 <svg
                   width="15"
                   height="15"
@@ -390,7 +391,9 @@
                 placeholder="Укажите дату"
                 id="arrival-date"
               />
-              <button class="button-calendar" type="button"></button>
+              <button class="button-calendar" type="button">
+                <span class="visually-hidden">Календарь.</span>
+              </button>
               <p class="middle-calendar">
                 Мы не можем отправить вас в прошлое.
               </p>
@@ -407,7 +410,9 @@
                 placeholder="Укажите дату"
                 id="date-of-departure"
               />
-              <button class="button-calendar" type="button"></button>
+              <button class="button-calendar" type="button">
+                <span class="visually-hidden">Календарь.</span>
+              </button>
               <p class="middle-calendar-color">
                 На эти даты есть свободные номера. Пока есть.
               </p>
@@ -416,6 +421,7 @@
               <label for="adults" class="counter-margin">Взрослые:</label>
               <div class="counter">
                 <button type="button" class="counter-button counter-minus">
+                  <span class="visually-hidden">Минус.</span>
                   <svg
                     width="14"
                     height="2"
@@ -435,6 +441,7 @@
                   id="adults"
                 />
                 <button type="button" class="counter-button counter-plus">
+                  <span class="visually-hidden">Плюс.</span>
                   <svg
                     width="14"
                     height="14"
@@ -452,6 +459,7 @@
               </div>
               <div class="tooltip">
                 <button class="tooltip-toggle" type="button">
+                  <span class="visually-hidden">Информация.</span>
                   <svg
                     width="26"
                     height="26"
@@ -480,6 +488,7 @@
 
               <div class="counter-second">
                 <button type="button" class="counter-button counter-minus">
+                  <span class="visually-hidden">Минус.</span>
                   <svg
                     width="14"
                     height="2"
@@ -500,6 +509,7 @@
                   id="kids"
                 />
                 <button type="button" class="counter-button counter-plus">
+                  <span class="visually-hidden">Плюс.</span>
                   <svg
                     width="14"
                     height="14"
